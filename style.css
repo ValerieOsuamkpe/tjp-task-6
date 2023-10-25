@@ -52,6 +52,8 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 0px 120px;
+    padding-top: 83px;
+    padding-bottom: 104px;
     /* flex-wrap: wrap;
     justify-content: center;
     align-items: center; */
@@ -74,6 +76,8 @@ nav {
     line-height: normal;
     display: inline;
     flex-direction: row;
+    /* margin-top: 122.5px;
+    margin-bottom: 24px; */
 }
 #decor {
     color: #FFA800;
@@ -105,6 +109,8 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    /* margin-top: 40px;
+    margin-bottom: 56px; */
 }
 .shop-now {
     display: flex;
@@ -112,31 +118,77 @@ nav {
 .right-one {
     width: 50%;
 }
+.right-one img {
+    width: 100%;
+}
 /* Section two */
 .section-two {
     display: flex;
     flex-direction: row;
     background: #F5FAFF;
-    padding: 0px 120px;
+    justify-content: space-between;
+    display: inline-flex;
+    padding: 64px 120px;
+    align-items: center;
+    gap: 24px;
 }
 .left-two {
-    width: 50%;
+    /* width: 50%; */
+    display: flex;
+    width: 552px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 32px; */
+    
+}
+.title-two-cover {
+    margin-top: 108.5px;
+}
+.title-two{
+    color: #141414;
+    font-family: Clash Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 48px */
+    letter-spacing: 0.5px;
+}
+.left-two p {
+    color: #3D3D3D;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    width: 516px;
+    margin: 32px 0px;
+}
+.left-two button {
+    display: flex;
+    padding: 14.5px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #464E5F;
+    margin-bottom: 108.5px;
 }
 .right-two {
-    width: 50%;
+    width: 624px;
     position: relative;
 }
 .views {
     /* width: ; */
     position: absolute;
-    top: 100px;
-    left: 30px;
+    top: 190px;
+    left: -50px;
+    
 }
 .clicks {
     /* width: ; */
     position: absolute;
-    top: 40px;
-    right: 50px;
+    bottom: -40px;
+    right: 70px;
 }
 /* Section three */
 .section-three {
@@ -155,10 +207,24 @@ nav {
 .profile-card {
     position: absolute;
     top: 120px;
-    left: 10px;
+    left: -10px;
 }
 .right-three {
-    width: 50%;
+    /* width: 50%; */
+    display: flex;
+    width: 536px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.about {
+    color: #141414;
+    font-family: Clash Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 48px */
+    letter-spacing: 0.5px;
 }
 /* Footer */
 footer {
