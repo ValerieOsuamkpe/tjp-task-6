@@ -265,8 +265,21 @@ footer {
     justify-content: space-between;
 }
 .footer-right {
-    width: ;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: flex-end;
+    gap: 24px;
+}
+.footer-right p {
+    color: #FFF;
+    font-family: Clash Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
 }
