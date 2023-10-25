@@ -255,6 +255,7 @@ nav {
     gap: 10px;
     border-radius: 8px;
     border: 1px solid #464E5F;
+    margin-top: 32px;
 }
 /* Footer */
 footer {
