@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 .container {
-    /* padding: 0px 120px; */
+    display: flexbox;
+    overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "ClashGrotesk";
@@ -17,16 +18,21 @@ nav {
     flex-direction: row;
     padding: 24px 120px;
     justify-content: space-between;
-    align-items: center;
+    border: 2px solid #000 ;
     position: sticky;
     top: 0px;
     z-index: 3;
 }
-.left-nav {
+.menu-button {
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    display: none;
     
 }
+
 .nav-logo {
-    width: ;
+    /* width: ; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,6 +41,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    overflow-x: hidden;
 }
 .right-nav span {
     color: #000;
@@ -54,6 +61,7 @@ nav {
     padding: 0px 120px;
     padding-top: 83px;
     padding-bottom: 104px;
+    width: 100%;
     /* flex-wrap: wrap;
     justify-content: center;
     align-items: center; */
@@ -61,7 +69,8 @@ nav {
 .left-one {
     /* width: 50%; */
     display: flex;
-    width: 581px;
+    /* width: 581px; */
+    width: 55%;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -87,13 +96,16 @@ nav {
     font-weight: 600;
     line-height: normal;
 }
-#subtext{
+.subtext{
     color: #000;
-    font-family: Proxima Nova;
+    font-family: proxima-nova, sans-serif;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 36px */
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* line-height: 150%;  */
 }
 .yellow-button {
     padding: 14.5px 24px;
@@ -126,6 +138,7 @@ nav {
     display: flex;
     flex-direction: row;
     background: #F5FAFF;
+    width: 100%;
     /* justify-content: space-between; */
     /* display: inline-flex; */
     padding: 64px 120px ;
@@ -133,9 +146,9 @@ nav {
     /* gap: 24px; */
 }
 .left-two {
-    /* width: 50%; */
+    width: 50%;
     display: flex;
-    width: 552px;
+    /* width: 552px; */
     flex-direction: column;
     align-items: flex-start;
     /* gap: 32px; */
@@ -155,7 +168,7 @@ nav {
 }
 .left-two p {
     color: #3D3D3D;
-    font-family: Proxima Nova;
+    font-family: Proxima-Nova, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -171,25 +184,35 @@ nav {
     gap: 10px;
     border-radius: 8px;
     border: 1px solid #464E5F;
-    margin-bottom: 108.5px;
+    /* margin-bottom: 108.5px; */
 }
 .right-two {
-    width: 624px;
+    /* width: 624px; */
+    width: 50%;
+    height: 50%;
     margin-left: 80px;
     position: relative;
+    border: 2px solid black;
+    /* overflow: hidden; */
 }
 .views {
     /* width: ; */
     position: absolute;
-    top: 190px;
-    left: -50px;
+    top: 30%;
+    left: -10%;
     
 }
 .clicks {
     /* width: ; */
     position: absolute;
-    bottom: -40px;
-    left: 280px;
+    top: 50%;
+    left: 35%;
+}
+.interior-image{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
 }
 /* Section three */
 .section-three {
@@ -198,9 +221,10 @@ nav {
     padding: 0px 120px;
     padding: 104px 126px;
     gap: 40px;
+    width: 100%
 }
 .left-three {
-    width: ;
+    width: 70%;
     /* position: relative; */
 }
 /* .color-picker {
@@ -213,9 +237,9 @@ nav {
     left: -10px;
 } */
 .right-three {
-    /* width: 50%; */
+    width: 50%;
     display: flex;
-    width: 536px;
+    /* width: 536px; */
     flex-direction: column;
     align-items: flex-start;
     /* gap: 32px; */
@@ -270,6 +294,7 @@ footer {
     /* align-items: center; */
     background: #1E1E1E;
     color: white;
+    width: 100%;
 }
 .footer-left {
     width: 15%;
@@ -296,4 +321,15 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 16px;
+}
+
+/* Responsiveness @media queries */
+@media only screen and (max-width: 600px) { 
+    .menu-button{
+        display: flex;
+    }
+    .right-nav{
+        display: none;
+        position: absolute;
+    }
 }
