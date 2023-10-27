@@ -203,7 +203,6 @@ nav {
     height: 50%;
     margin-left: 80px;
     position: relative;
-    border: 2px solid black;
     /* overflow: hidden; */
 }
 .views {
@@ -223,7 +222,6 @@ nav {
     object-fit: fill;
     height: 100%;
     width: 100%;
-    border: 1px solid black;
 }
 /* Section three */
 .section-three {
@@ -237,10 +235,17 @@ nav {
 .left-three {
     width: 50%;
     height: 50%;
-    border: #000 1px solid;
     /* position: relative; */
 }
 .left-three img {
+    width: 100%;
+}
+.left-three-down {
+    width: 50%;
+    display: none;
+    /* position: relative; */
+}
+.left-three-down img {
     width: 100%;
 }
 /* .color-picker {
@@ -255,10 +260,8 @@ nav {
 .right-three {
     width: 50%;
     display: flex;
-    /* width: 536px; */
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 32px; */
 }
 .about {
     color: #141414;
@@ -266,7 +269,7 @@ nav {
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 48px */
+    line-height: 150%;
     letter-spacing: 0.5px;
     margin-top: 50.5px;
     margin-bottom: 24px;
@@ -353,7 +356,7 @@ footer {
     }
 
     nav {
-        background: darkblue;
+        background: white;
         display: flex;
         flex-direction: row;
         padding: 16px 20px;
@@ -447,8 +450,59 @@ footer {
 
 
 /* sectiom 2 here */
+.section-two {
+    display: flex;
+    flex-direction: column;
+    background: #F5FAFF;
+    width: 100%;
+    padding: 64px 20px ;
+}
+.left-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title-two{
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.subtext-two {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+    margin: 32px 0px ;
+}
 
-
+.learn-more {
+    padding: 14.5px 40%;
+}
+.right-two {
+    width: 100%;
+    margin-left: 0px;
+    position: relative;
+}
+.views {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: -1.5%;
+    
+}
+.clicks {
+    width: 30%;
+    position: absolute;
+    top: 83%;
+    left: 65%;
+}
+.interior-image{
+    object-fit: fill;
+    width: 85%;
+    margin-left: 15%;
+}
 
 
 
@@ -461,9 +515,10 @@ footer {
     gap: 40px;
     width: 100%
 }
-.left-three {
+.left-three {   display: none;   }
+.left-three-down {
     width: 100%;
-    border: #000 1px solid;
+    display: flex;
     /* position: relative; */
 }
 .right-three {
@@ -477,14 +532,7 @@ footer {
     margin-top: 24px;
 }
 .view-project {
-    font-family: "Proxima Nova", sans-serif;
-    display: flex;
     padding: 14.5px 35%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    border: 1px solid #464E5F;
     margin-top: 32px;
 }
 
