@@ -141,6 +141,7 @@ nav {
     /* justify-content: space-between; */
     /* display: inline-flex; */
     padding: 64px 120px ;
+    padding-bottom: 160px;
     /* align-items: center; */
     /* gap: 24px; */
 }
@@ -290,6 +291,7 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
+    margin-left: 5%;
     margin-top: 24px;
 }
 .view-project {
@@ -578,10 +580,10 @@ footer {
     gap: 24px;
 }
 .footer-right p {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
 }
 .footer-icons {
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
 }
 
 
