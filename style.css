@@ -18,24 +18,18 @@ nav {
     flex-direction: row;
     padding: 24px 120px;
     justify-content: space-between;
-    border: 2px solid #000 ;
     position: sticky;
     top: 0px;
     z-index: 3;
 }
-.menu-button {
-    border: 2px solid black;
-    padding: 2px;
-    border-radius: 5px;
-    display: none;
-    
-}
-
 .nav-logo {
     /* width: ; */
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.menu-button {
+    display: none;  
 }
 .right-nav {
     display: flex;
@@ -45,7 +39,7 @@ nav {
 }
 .right-nav span {
     color: #000;
-    font-family: Proxima Nova, ;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -96,16 +90,17 @@ nav {
     font-weight: 600;
     line-height: normal;
 }
-.subtext{
+.subtext-one {
     color: #000;
-    font-family: proxima-nova, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 24px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* line-height: 150%;  */
+    line-height: 150%;
+    width: 90%; 
 }
 .yellow-button {
     padding: 14.5px 24px;
@@ -116,7 +111,7 @@ nav {
     align-items: center;
     gap: 10px;
     border-radius: 8px;
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -126,6 +121,10 @@ nav {
 }
 .shop-now {
     display: flex;
+    width: 100%;
+}
+.shop-now img {
+    width: 100%;
 }
 .right-one {
     width: 50%;
@@ -166,16 +165,28 @@ nav {
     line-height: 150%; /* 48px */
     letter-spacing: 0.5px;
 }
-.left-two p {
+/* .left-two p {
     color: #3D3D3D;
     font-family: Proxima-Nova, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 27px */
+    line-height: 150%; 27px
     width: 516px;
     margin: 32px 0px;
+} */
+
+.subtext-two {
+    color: #3D3D3D;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+    margin: 32px 0px ;
 }
+
 .learn-more {
     display: flex;
     padding: 14.5px 24px;
@@ -257,7 +268,7 @@ nav {
 }
 .right-three p {
     color: #292929;
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -265,7 +276,7 @@ nav {
 }
 .bullet {
     color: #3D3D3D;
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -273,6 +284,7 @@ nav {
     margin-top: 24px;
 }
 .view-project {
+    font-family: "Proxima Nova", sans-serif;
     display: flex;
     padding: 14.5px 24px;
     justify-content: center;
@@ -325,11 +337,109 @@ footer {
 
 /* Responsiveness @media queries */
 @media only screen and (max-width: 600px) { 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
     .menu-button{
         display: flex;
     }
+
+    nav {
+        background: darkblue;
+        display: flex;
+        flex-direction: row;
+        padding: 16px 20px;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+    }
+
     .right-nav{
         display: none;
         position: absolute;
+    }
+
+    /* .nav-logo {     } */
+
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin-top: 40px;
+        margin-bottom: 48px;
+        width: 100%;
+    }
+    .left-one {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        flex-shrink: 0;
+    }
+    .title {
+        color: #000;
+        font-family: Clash Grotesk;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: inline;
+        flex-direction: row;
+    }
+    #decor {
+        color: #FFA800;
+        font-family: Clash Grotesk;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .subtext-one {
+        color: #000;
+        font-family: "Proxima Nova", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        display: flex;
+        line-height: 150%;
+        width: 100%;
+    }
+    .yellow-button {
+        padding: 14.5px 24px;
+        background: #FFBF23;
+        color: #000;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        font-family: "Proxima Nova", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 24px;
+        margin-top: 8px;
+    }
+    .shop-now {
+        display: flex;
+        flex-direction: row;
+        width: 100%
+    }
+    .fast, .confidence, .checkout {
+        width: 33%;
+    }
+    .right-one {
+        width: 100%;
+        margin-top: 48px;
+        margin-bottom: 40px;
+    }
+    .right-one img {
+        width: 100%;
     }
 }
