@@ -235,8 +235,13 @@ nav {
     width: 100%
 }
 .left-three {
-    width: 70%;
+    width: 50%;
+    height: 50%;
+    border: #000 1px solid;
     /* position: relative; */
+}
+.left-three img {
+    width: 100%;
 }
 /* .color-picker {
     position: absolute;
@@ -363,8 +368,8 @@ footer {
         position: absolute;
     }
 
-    /* .nav-logo {     } */
-
+    .nav-logo {   width: 50%;  }
+    .nav-logo img {  width: 100%;  }
     .section-one {
         display: flex;
         flex-direction: column;
@@ -410,7 +415,7 @@ footer {
         width: 100%;
     }
     .yellow-button {
-        padding: 14.5px 24px;
+        padding: 14.5px 30%;
         background: #FFBF23;
         color: #000;
         border: none;
@@ -431,9 +436,6 @@ footer {
         flex-direction: row;
         width: 100%
     }
-    .fast, .confidence, .checkout {
-        width: 33%;
-    }
     .right-one {
         width: 100%;
         margin-top: 48px;
@@ -442,4 +444,49 @@ footer {
     .right-one img {
         width: 100%;
     }
+
+
+/* sectiom 2 here */
+
+
+
+
+
+
+/* Section three */
+.section-three {
+    display: flex;
+    flex-direction: column;
+    padding: 104px 20px;
+    gap: 40px;
+    width: 100%
+}
+.left-three {
+    width: 100%;
+    border: #000 1px solid;
+    /* position: relative; */
+}
+.right-three {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bullet {
+    padding-left: 5%;
+    margin-top: 24px;
+}
+.view-project {
+    font-family: "Proxima Nova", sans-serif;
+    display: flex;
+    padding: 14.5px 35%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #464E5F;
+    margin-top: 32px;
+}
+
+
 }
