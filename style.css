@@ -195,6 +195,7 @@ nav {
     gap: 10px;
     border-radius: 8px;
     border: 1px solid #464E5F;
+    background: none;
     /* margin-bottom: 108.5px; */
 }
 .right-two {
@@ -300,6 +301,7 @@ nav {
     gap: 10px;
     border-radius: 8px;
     border: 1px solid #464E5F;
+    background: none;
     margin-top: 32px;
 }
 /* Footer */
@@ -317,7 +319,7 @@ footer {
     width: 100%;
 }
 .footer-left {
-    width: 15%;
+    width: 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -544,6 +546,45 @@ footer {
     padding: 14.5px 33.3%;
     margin-top: 32px;
 }
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #F5FAFF;
+    padding: 32px 20px;
+    justify-content: center;
+    /* align-items: center; */
+    background: #1E1E1E;
+    color: white;
+    width: 100%;
+}
+.footer-left {
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+.footer-left img {
+    width: 50%;
+    margin-bottom: 24px;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.footer-right p {
+    font-size: 12px;
+}
+.footer-icons {
+    gap: 8px;
+}
+
 
 
 }
