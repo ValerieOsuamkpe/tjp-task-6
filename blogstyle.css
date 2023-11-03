@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* display: flexbox;
+    overflow: hidden; */
+}
+
+/* Header */
+header {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 8.5%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 3;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+}
+nav a {
+    color: #000;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+.highlight {
+    text-decoration-line: underline;
+    text-decoration-color: #FFBF23;
+}
+
+/* Section 1 */
+.section-one {
+    position: relative;
+}
+.section-one img {
+    width: 100%;
+}
+.hero {
+    width: 50%;
+    position: absolute;
+    top: 32%;
+    left: 8.5%;
+}
+.hero h1 {
+    color: #000;
+    font-family: Clash Grotesk;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.hero button {
+    padding: 14.5px 24px;
+    background: #FFBF23;
+    color: #000;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Section 2 - FA is featured articles */
+.section-two {
+    padding: 0px 8.5%;
+}
+.FA {
+
+}
+.FA h2 {
+    color: #000;
+    font-family: Clash Grotesk;
+    font-size: 40px;
+    font-weight: 500;
+}
+.FA-3-buttons {}
+.FA-button {
+    padding: 14.5px 24px;
+    background: #FFF;
+    color: #000;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+}
+.FA-button-yellow {
+    background: #FFBF23;
+    padding: 14.5px 24px;
+    color: #000;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+}
+/* cards in section 2 */
+.FA-cards {
+
+}
+.FA-cards img {
+    /* width: 100%; */
+    margin-bottom: 16px;
+}
+.date {
+    color: #495057;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 12px;
+}
+.FA-h2 {
+    color: #313131;
+    font-family: Clash Grotesk;
+    font-size: 24px;
+    font-weight: 500;
+    width: 30%;
+    margin: 16px 0px;
+}
+.FA-subtext {
+    width: 31%;
+    color: #464E5F;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+/* Section 3 */
+.section-three {
+    padding: 0px 8.5%;
+}
+.third {
+    position: relative;
+}
+.third img {
+    width: 100%;
+}
+.third h3 {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    right: 18%;
+    width: 69%;
+    color: #FFF;
+    text-align: center;
+    font-family: Clash Grotesk;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Section 4 */
+.section-four {
+    padding: 0px 8.5%;
+}
+.line img {
+    width: 100%;
+}
+.section-four h2 {
+    color: #313131;
+    font-family: Clash Grotesk;
+    font-size: 56px;
+    font-weight: 500;
+}
+.sr-cards {
+    position: relative;
+}
+.sr-cards one
+.sr-cards img {}
+.sr-text {
+    width: 27%;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+.sr-text p {
+    color: #FFF;
+}
+.sr-text h4 {
+    margin: 16px 0px;
+    width: 70%;
+    color: #FFF;
+    font-family: Clash Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+.subtext {
+    color: #FFF;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    background: #F5FAFF;
+    display: flex;
+    /* width: 1440px; */
+    padding: 32px 8.5%;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: #1E1E1E;
+    color: white;
+    width: 100%;
+}
+.footer-left {
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+.footer-right p {
+    color: #FFF;
+    font-family: Clash Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
