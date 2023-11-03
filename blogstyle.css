@@ -21,6 +21,9 @@ header {
     top: 0px;
     z-index: 3;
 }
+.menu-button {
+    display: none;  
+}
 nav {
     display: flex;
     gap: 20px;
@@ -74,17 +77,21 @@ nav a {
 /* Section 2 - FA is featured articles */
 .section-two {
     padding: 0px 8.5%;
+    margin-top: 64px;
 }
 .FA {
-
+    
 }
 .FA h2 {
     color: #000;
     font-family: Clash Grotesk;
     font-size: 40px;
     font-weight: 500;
+    margin-bottom: 24px;
 }
-.FA-3-buttons {}
+.FA-3-buttons {
+    margin-bottom: 56px;
+}
 .FA-button {
     padding: 14.5px 24px;
     background: #FFF;
@@ -108,8 +115,10 @@ nav a {
     font-size: 18px;
 }
 /* cards in section 2 */
-.FA-cards {
-
+.FA-cardss {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
 }
 .FA-cards img {
     /* width: 100%; */
@@ -125,11 +134,11 @@ nav a {
     font-family: Clash Grotesk;
     font-size: 24px;
     font-weight: 500;
-    width: 30%;
+    width: 100%;
     margin: 16px 0px;
 }
 .FA-subtext {
-    width: 31%;
+    width: 100%;
     color: #464E5F;
     font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
@@ -140,7 +149,7 @@ nav a {
 
 /* Section 3 */
 .section-three {
-    padding: 0px 8.5%;
+    padding: 104px 8.5%;
 }
 .third {
     position: relative;
@@ -165,9 +174,19 @@ nav a {
 /* Section 4 */
 .section-four {
     padding: 0px 8.5%;
+    margin-bottom: 104px;
+}
+.line {
+    
 }
 .line img {
     width: 100%;
+}
+.sr {
+    /* align-items: center;
+    align-content: center;
+    justify-self: center;
+    justify-content: center; */
 }
 .section-four h2 {
     color: #313131;
@@ -175,21 +194,38 @@ nav a {
     font-size: 56px;
     font-weight: 500;
 }
-.sr-cards {
+.sr-cardss {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
 }
 .sr-cards one
 .sr-cards img {}
-.sr-text {
+.sr-text-1 {
     width: 27%;
     position: absolute;
     top: 20%;
     left: 2%;
 }
-.sr-text p {
-    color: #FFF;
+.sr-text-2 {
+    width: 27%;
+    position: absolute;
+    top: 20%;
+    left: 36.2%;
 }
-.sr-text h4 {
+.sr-text-3 {
+    width: 27%;
+    position: absolute;
+    top: 20%;
+    left: 70.5%;
+}
+.sr-date {
+    color: #FFF;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 12px;
+}
+.subhead {
     margin: 16px 0px;
     width: 70%;
     color: #FFF;
