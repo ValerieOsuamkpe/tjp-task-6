@@ -38,13 +38,14 @@ nav {
     gap: 20px;
     overflow-x: hidden;
 }
-.right-nav span {
+.right-nav a {
     color: #000;
     font-family: "Proxima Nova", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 #sign-up {
     color: #FFA800;
