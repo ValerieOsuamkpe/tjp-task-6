@@ -348,6 +348,9 @@ footer {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+    .FA-cardss img {
+        width: 100%;
+    }
     .date {
         color: #495057;
         font-family: "Proxima Nova", sans-serif;
@@ -357,11 +360,16 @@ footer {
         width: 80%;
     }
     .FA-subtext {
-        width: 80%;
+        width: 100%;
     }
 
     /* Section 3 */
-
+    .third h3 {
+        font-size: 18px;
+        font-weight: 500;
+        width: 55%;
+        margin: 0px auto;
+    }
 
 
     /* Section 4 */
@@ -371,7 +379,9 @@ footer {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
+    .sr h2 {
+        font-size: 32px;
+    }
 
 
     /* .section-one {
